@@ -3,6 +3,14 @@
           padding: 0;
       }
 
+      
+      .header-icons{
+        width: 10%;
+        padding-right: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
       section {
           margin: 100px;
           padding: 20px;
