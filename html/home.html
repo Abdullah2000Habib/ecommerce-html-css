@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New Arrival Section</title>
     <link rel="stylesheet" href="../css/general/general-stayle.css" />
     <link rel="stylesheet" href="../css/general/header.css" />
     <link rel="stylesheet" href="../css/general/footer.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Home - Ecommerce Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="../css/home.css" />
-    <style></style>
   </head>
 
   <body>
@@ -39,48 +42,216 @@
     </header>
     <!-- End Header Section-->
     
-    <section>
-      <div class="section-header">
-        <span>Featured</span>
-        <h2>New Arrival</h2>
-      </div>
-
-      <div class="grid">
-        <div class="card large" id="ps5">
-          <div class="card-content">
-            <h3>PlayStation 5</h3>
-            <p>Black and White version of the PS5 coming out on sale.</p>
-            <a href="#">Shop Now</a>
+  
+    <!-- Best Selling Products Section -->
+    <section class="best-selling-section">
+      <div class="container">
+        <div class="section-header-wrapper">
+          <div class="section-header-left">
+            <div class="section-badge">
+              <div class="badge-indicator"></div>
+              <span>This Month</span>
+            </div>
+            <h2>Best Selling Products</h2>
+          </div>
+          <div class="section-header-right">
+            <button class="view-all-btn">View All</button>
           </div>
         </div>
 
-        <div class="grid-2">
-          <div class="card" id="women">
-            <div class="card-content">
-              <h3>Women's Collections</h3>
-              <p>Featured woman collections that give you another vibe.</p>
-              <a href="#">Shop Now</a>
+        <div class="products-container">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../images/jacket.png" alt="The north coat" />
+              <div class="product-actions">
+                <button class="action-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="action-btn">
+                  <i class="far fa-eye"></i>
+                </button>
+              </div>
+              <button class="add-to-cart">
+                <span>Add to Cart</span>
+              </button>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">The north coat</h3>
+              <div class="product-price">
+                <span class="current-price">$260</span>
+                <span class="old-price">$360</span>
+              </div>
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="review-count">(65)</span>
+              </div>
             </div>
           </div>
 
-          <div class="card" id="speakers">
-            <div class="card-content">
-              <h3>Speakers</h3>
-              <p>Amazon wireless speakers.</p>
-              <a href="#">Shop Now</a>
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../images/gucci-bag.jpg" alt="Gucci duffle bag" />
+              <div class="product-actions">
+                <button class="action-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="action-btn">
+                  <i class="far fa-eye"></i>
+                </button>
+              </div>
+              <button class="add-to-cart">
+                <span>Add to Cart</span>
+              </button>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Gucci duffle bag</h3>
+              <div class="product-price">
+                <span class="current-price">$960</span>
+                <span class="old-price">$1160</span>
+              </div>
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="review-count">(65)</span>
+              </div>
             </div>
           </div>
 
-          <div class="card" id="perfume">
-            <div class="card-content">
-              <h3>Perfume</h3>
-              <p>GUCCI INTENSE OUD EDP</p>
-              <a href="#">Shop Now</a>
+          <!-- Product 3  -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../images/cpu-cooler.jpg" alt="RGB liquid CPU Cooler" />
+              <div class="product-actions">
+                <button class="action-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="action-btn">
+                  <i class="far fa-eye"></i>
+                </button>
+              </div>
+              <button class="add-to-cart">
+                <span>Add to Cart</span>
+              </button>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">RGB liquid CPU Cooler</h3>
+              <div class="product-price">
+                <span class="current-price">$160</span>
+                <span class="old-price">$170</span>
+              </div>
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="review-count">(65)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../images/bookstable.jpg" alt="Small BookSelf" />
+              <div class="product-actions">
+                <button class="action-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="action-btn">
+                  <i class="far fa-eye"></i>
+                </button>
+              </div>
+              <button class="add-to-cart">
+                <span>Add to Cart</span>
+              </button>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Small BookSelf</h3>
+              <div class="product-price">
+                <span class="current-price">$360</span>
+              </div>
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="review-count">(65)</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- New Arrival Section -->
+    <section>
+      <div class="container">
+        <div class="section-header-wrapper">
+          <div class="section-header-left">
+            <div class="section-badge">
+              <div class="badge-indicator"></div>
+              <span>Featured</span>
+            </div>
+            <h2>New Arrival</h2>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="card large" id="ps5">
+            <div class="card-content">
+              <h3>PlayStation 5</h3>
+              <p>Black and White version of the PS5 coming out on sale.</p>
+              <a href="#">Shop Now</a>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="card" id="women">
+              <div class="card-content">
+                <h3>Women's Collections</h3>
+                <p>Featured woman collections that give you another vibe.</p>
+                <a href="#">Shop Now</a>
+              </div>
+            </div>
+
+            <div class="card" id="speakers">
+              <div class="card-content">
+                <h3>Speakers</h3>
+                <p>Amazon wireless speakers.</p>
+                <a href="#">Shop Now</a>
+              </div>
+            </div>
+
+            <div class="card" id="perfume">
+              <div class="card-content">
+                <h3>Perfume</h3>
+                <p>GUCCI INTENSE OUD EDP</p>
+                <a href="#">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- footer -->
 
     <footer>
@@ -144,7 +315,9 @@
       </div>
 
       <!-- Footer Bottom -->
-      <div class="footer-bottom">© Copyright Rimel 2022. All rights reserved</div>
+      <div class="footer-bottom">
+        © Copyright Rimel 2022. All rights reserved
+      </div>
     </footer>
   </body>
 </html>
