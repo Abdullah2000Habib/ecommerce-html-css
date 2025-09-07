@@ -3,14 +3,319 @@
   padding: 0;
 }
 
-      
-.header-icons{
-  width: 10%;
-    padding-right: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+/* Hero Banner Section */
+.hero-banner {
+  background: #000000;
+  padding: 0;
+  margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+  width: 83%;
+  margin-right: 10%;
+  padding: 50px 50px 20px 50px;
+  
 }
+
+.hero-content {
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-left {
+  width:25%;
+  color: #ffffff;
+}
+
+.hero-badge {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.apple-logo {
+  width: 45px;
+  height: 45px;
+}
+
+.hero-badge span {
+  font-family: var(--font-poppins);
+  font-size: 16px;
+  font-weight: var(--font-normal);
+  color: #ffffff;
+}
+
+.hero-title {
+  font-family: var(--font-inter);
+  font-size: 48px;
+  font-weight: var(--font-semibold);
+  line-height: 1.2;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.hero-shop-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-poppins);
+  font-size: 16px;
+  font-weight: var(--font-medium);
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding-bottom: 3px;
+}
+
+.hero-shop-btn:hover {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+.hero-shop-btn::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: var(--gray-200);
+}
+
+.hero-shop-btn i {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.hero-shop-btn:hover i {
+  transform: translateX(4px);
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.hero-phone {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.hero-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  background: var(--primary);
+  opacity: 1;
+}
+
+.indicator:hover {
+  opacity: 0.8;
+}
+
+/* Hero Banner Responsive Design */
+@media (max-width: 1200px) {
+  .hero-banner {
+    padding: 50px;
+
+  }
+  
+  .hero-content {
+    gap: 30px;
+    min-height: 350px;
+  }
+  .hero-left{
+    width: 40%;
+    flex: 1;
+  }
+  .hero-right{
+    width: 40%;
+    flex: 1;
+  }
+
+  
+  .hero-title {
+    font-size: 42px;
+  }
+  
+  .hero-phone {
+    max-height: 450px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-banner {
+    padding: 40px;
+  }
+  
+  .hero-content {
+    gap: 25px;
+    min-height: 300px;
+
+  }
+  .hero-left{
+    width: 40%;
+    flex: 1;
+  }
+  .hero-right{
+    width: 40%;
+    flex: 1;
+  }
+  .hero-title {
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+  
+  .hero-badge {
+    margin-bottom: 15px;
+  }
+  
+  .hero-phone {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    padding: 30px 0;
+    margin: auto;
+    margin-top: 40px;
+  }
+  
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    min-height: auto;
+  }
+  
+  .hero-left {
+    max-width: 100%;
+    order: 2;
+  }
+  
+  .hero-right {
+    max-width: 100%;
+    order: 1;
+  }
+  
+  .hero-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-badge {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .hero-phone {
+    max-height: 300px;
+  }
+  
+  .hero-indicators {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-banner {
+    padding: 25px 0;
+  }
+  
+  .hero-content {
+    gap: 25px;
+  }
+  
+  .hero-title {
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+  
+  .hero-badge span {
+    font-size: 14px;
+  }
+  
+  .hero-shop-btn {
+    font-size: 14px;
+  }
+  
+  .hero-phone {
+    max-height: 250px;
+  }
+  
+  .hero-indicators {
+    margin-top: 25px;
+  }
+  
+  .indicator {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-banner {
+    padding: 20px 0;
+  }
+  
+  .hero-content {
+    gap: 20px;
+  }
+  
+  .hero-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .hero-badge {
+    margin-bottom: 12px;
+  }
+  
+  .hero-badge span {
+    font-size: 13px;
+  }
+  
+  .hero-shop-btn {
+    font-size: 13px;
+  }
+  
+  .hero-phone {
+    max-height: 200px;
+  }
+  
+  .hero-indicators {
+    margin-top: 20px;
+    gap: 6px;
+  }
+  
+  .indicator {
+    width: 5px;
+    height: 5px;
+  }
+}
+
+/* Removed conflicting header-icons styles - using header-new.css instead */
       section {
           margin: 100px;
           padding: 20px;
