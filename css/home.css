@@ -316,6 +316,389 @@
   }
 }
 
+/* Flash Sales Section */
+.flash-sales-section {
+  margin: 100px 0;
+  padding: 0 20px;
+}
+
+.flash-sales-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+.flash-sales-title-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.flash-sales-badge {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: var(--font-semibold);
+  font-family: var(--font-poppins);
+}
+
+.flash-sales-title {
+  font-size: var(--text-4xl);
+  font-weight: var(--font-semibold);
+  color: #000;
+  font-family: var(--font-inter);
+  margin: 0;
+}
+
+.countdown-timer {
+  padding-left: 60px;
+  display: flex;
+  flex:1;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-inter);
+}
+
+.timer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.timer-number {
+  font-size: 32px;
+  font-weight: var(--font-bold);
+  color: #000;
+  font-family: var(--font-inter);
+}
+
+.timer-label {
+  font-size: 12px;
+  font-weight: var(--font-medium);
+  color: #000;
+  font-family: var(--font-poppins);
+}
+
+.timer-separator {
+  font-size: 32px;
+  font-weight: var(--font-bold);
+  color: #E07575;
+  margin: 0 8px;
+}
+
+.flash-sales-navigation {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-arrow-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  background: var(--gray-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #000;
+}
+
+.nav-arrow-btn i {
+  font-size: var(--text-xl);
+}
+
+.nav-arrow-btn:hover {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.flash-sales-products {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+
+.flash-product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: white;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.flash-product-card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.flash-product-image {
+  
+  position: relative;
+  background-color: #f5f5f5;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.flash-product-image img {
+  height: 180px;
+  width: 180px;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+}
+
+.discount-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #db4444;
+  color: white;
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+  font-family: var(--font-poppins);
+  font-weight: var(  --font-normal);
+  z-index: 5;
+}
+
+.flash-product-actions {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.flash-action-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.flash-action-btn:hover {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--gray-200);
+}
+
+.flash-action-btn i {
+  font-size: 14px;
+}
+
+.flash-product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.flash-product-name {
+  font-size: 16px;
+  font-family: var(--font-poppins);
+  font-weight: var(  --font-medium);
+  color: #000;
+}
+
+.flash-product-price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-poppins);
+  font-size: var(--text-base);
+  font-weight: var(  --font-medium);
+}
+
+.flash-current-price {
+  color: var(--primary);
+}
+
+.flash-old-price {
+  color: var(--gray-400);
+  text-decoration: line-through;
+}
+
+.flash-product-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.flash-add-to-cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: var(--radius-sm);
+  margin-top: 8px;
+}
+
+.flash-add-to-cart:hover {
+  background-color: #c0392b;
+}
+
+.flash-sales-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.view-all-products-btn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  border-radius: var(--radius-sm);
+  font-size: 16px;
+  font-weight: var(--font-medium);
+  font-family: var(--font-poppins);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-all-products-btn:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+/* Flash Sales Responsive Design */
+@media (max-width: 1200px) {
+  .flash-sales-products {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .flash-sales-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .flash-sales-title-section {
+    width: 100%;
+  }
+
+  .countdown-timer {
+    align-self: center;
+  }
+
+  .flash-sales-navigation {
+    display: none; /* hide arrows on tablets and below */
+  }
+
+  .flash-sales-products {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .flash-sales-section {
+    margin: 50px 0;
+    padding: 0 10px;
+  }
+
+  .flash-sales-header {
+    gap: 20px;
+  }
+
+  .flash-sales-navigation {
+    display: none; /* ensure arrows hidden on small screens */
+  }
+
+  .flash-sales-title {
+    font-size: var(--text-2xl);
+  }
+
+  .timer-number {
+    font-size: 24px;
+  }
+
+  .timer-label {
+    font-size: 10px;
+  }
+
+  .timer-separator {
+    font-size: 24px;
+  }
+
+  .flash-sales-products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .flash-product-image {
+    height: 200px;
+  }
+
+  .flash-product-image img {
+    height: 140px;
+    width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .flash-sales-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .flash-sales-navigation {
+    display: none; /* hide arrows on phones */
+  }
+
+  .flash-sales-products {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .timer-number {
+    font-size: 20px;
+  }
+
+  .timer-separator {
+    font-size: 20px;
+  }
+
+  .view-all-products-btn {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
+
 /* Removed conflicting header-icons styles - using header-new.css instead */
       section {
           margin: 100px;
