@@ -667,3 +667,177 @@ section {
     min-width: 80px;
   }
 }
+
+/* Promotional Banner Section */
+.section.promotional-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.section.promotional-banner .container {
+  background: linear-gradient(135deg, #000000 0%, #2a2a2a 100%);
+  padding: 56px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.banner-content {
+  color: white;
+  z-index: 2;
+  position: relative;
+}
+
+.banner-category {
+  color: var(--color-green);
+  font-size: 16px;
+  font-weight: var(--font-semibold);
+  font-family: var(--font-poppins);
+  margin-bottom: 32px;
+  letter-spacing: 0.3px;
+}
+
+.banner-title {
+  font-size: 48px;
+  font-weight: var(--font-semibold);
+  font-family: var(--font-inter);
+  margin-bottom: 32px;
+  color: white;
+}
+
+.countdown-timer {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.countdown-item {
+  background: white;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown-number {
+  font-size: 16px;
+  font-weight: var(--font-semibold);
+  color: black;
+  display: block;
+}
+
+.countdown-label {
+  font-size: 11px;
+  color: black;
+  font-family: var(--font-poppins);
+  font-weight: var(--font-medium);
+}
+
+.buy-now-btn {
+  background-color: var(--color-green);
+  color: white;
+  padding: 16px 48px;
+  border-radius: var(--radius-sm);
+  font-size: 16px;
+  font-weight: var(--font-medium);
+  font-family: var(--font-poppins);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.buy-now-btn:hover {
+  background-color: #00cc00;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 255, 0, 0.3);
+}
+
+.banner-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.banner-image::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 350px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  filter: blur(100px);
+}
+.banner-image:hover:before {
+  background-color: #00cc00;
+}
+.banner-image img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  animation: bannerFloat 3s ease-in-out infinite;
+  transition: all 0.5s ease;
+}
+
+.banner-image:hover img {
+  animation-play-state: paused;
+  filter: drop-shadow(0 30px 50px #00cc00);
+  cursor: default;
+}
+
+@keyframes bannerFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Responsive Design for Promotional Banner */
+@media (max-width: 1024px) {
+  .section.promotional-banner .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .section.promotional-banner .banner-image {
+    order: -1;
+  }
+  .banner-title {
+    font-size: 36px;
+  }
+
+  .countdown-timer {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 28px;
+  }
+
+  .countdown-timer {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .countdown-number {
+    font-size: 20px;
+  }
+
+  .buy-now-btn {
+    padding: 14px 28px;
+    font-size: 14px;
+  }
+}
