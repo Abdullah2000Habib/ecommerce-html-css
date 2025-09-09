@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Ecommerce Store</title>
     <link rel="stylesheet" href="../css/general/general-stayle.css" />
+    <link rel="stylesheet" href="../css/general/header.css" />
+    <link rel="stylesheet" href="../css/header-new.css" />
     <link rel="stylesheet" href="../css/general/footer.css" />
+    <title>Home - Ecommerce Store</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -14,6 +16,308 @@
   </head>
 
   <body>
+    <!-- Start Header Section -->
+    <header class="new-header">
+      <div class="container">
+        <div class="header-content">
+          <!-- Logo Section -->
+          <div class="logo-section">
+            <a class="logo">Exclusive</a>
+          </div>
+
+          <!-- Navigation Section -->
+          <nav class="main-nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="home.html" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="sign-up.html" class="nav-link">Sign Up</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Search and Icons Section -->
+          <div class="header-actions">
+            <!-- Search Bar -->
+            <div class="search-container">
+              <input type="text" class="search-input" placeholder="What are you looking for?">
+              <button class="search-btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+
+            <!-- Icons -->
+            <div class="header-icons">
+              <a href="#" class="icon-link">
+                <i class="far fa-heart"></i>
+              </a>
+              <a href="#" class="icon-link">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header Section-->
+    
+    <!-- Hero Banner Section -->
+    <div class="hero-banner">
+      <div class="">
+        <div class="hero-content">
+          <div class="hero-left">
+            <div class="hero-badge">
+              <img src="../images/apple.png" alt="Apple Logo" class="apple-logo">
+              <span>iPhone 14 Series</span>
+            </div>
+            <h1 class="hero-title">Up to 10% off Voucher</h1>
+            <a href="#" class="hero-shop-btn">
+              Shop Now
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="hero-right">
+            <img src="../images/iphone.png" alt="iPhone 14" class="hero-phone">
+          </div>
+        </div>
+        <div class="hero-indicators">
+          <span class="indicator "></span>
+          <span class="indicator"></span>
+          <span class="indicator active"></span>
+          <span class="indicator"></span>
+          <span class="indicator"></span>
+        </div>
+      </div>
+    </div>
+    <!-- End Hero Banner Section -->
+
+    <!-- Flash Sales Section -->
+    <div class="flash-sales-section">
+      <div class="container">
+        <div class="flash-sales-header">
+          <div class="flash-sales-title-section">
+            <div class="flash-sales-badge">
+              <div class="badge-indicator"></div>
+              <span>Today's</span>
+            </div>
+            <h2 class="flash-sales-title">Flash Sales</h2>
+          </div>
+          <div class="countdown-timer">
+            <div class="timer-item">
+              <span class="timer-label">Days</span>
+              <span class="timer-number">03</span>
+            </div>
+            <span class="timer-separator">:</span>
+            <div class="timer-item">
+              <span class="timer-label">Hours</span>
+              <span class="timer-number">23</span>
+            </div>
+            <span class="timer-separator">:</span>
+            <div class="timer-item">
+              <span class="timer-label">Minutes</span>
+              <span class="timer-number">19</span>
+            </div>
+            <span class="timer-separator">:</span>
+            <div class="timer-item">
+              <span class="timer-label">Seconds</span>
+              <span class="timer-number">56</span>
+            </div>
+          </div>
+          <div class="flash-sales-navigation">
+            <button class="nav-arrow-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="nav-arrow-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="flash-sales-products">
+          <!-- Product 1 -->
+          <div class="flash-product-card">
+            <div class="flash-product-image">
+              <img src="../images/image01.png" alt="HAVIT HV-G92 Gamepad" />
+              <div class="discount-badge">-40%</div>
+              <div class="flash-product-actions">
+                <button class="flash-action-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="flash-action-btn">
+                  <i class="far fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="flash-product-info">
+              <h3 class="flash-product-name">HAVIT HV-G92 Gamepad</h3>
+              <div class="flash-product-price">
+                <span class="flash-current-price">$120</span>
+                <span class="flash-old-price">$160</span>
+              </div>
+              <div class="flash-product-rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="review-count">(88)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="flash-product-card">
+            <div class="flash-product-image">
+              <img src="../images/image02.png" alt="AK-900 Wired Keyboard" />
+              <button class="flash-add-to-cart">Add To Cart</button>
+              <div class="discount-badge">-35%</div>
+              <div class="flash-product-actions">
+                <button class="flash-action-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="flash-action-btn">
+                  <i class="far fa-eye"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="flash-product-info">
+              <h3 class="flash-product-name">AK-900 Wired Keyboard</h3>
+              <div class="flash-product-price">
+                <span class="flash-current-price">$960</span>
+                <span class="flash-old-price">$1160</span>
+              </div>
+              <div class="flash-product-rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="review-count">(75)</span>
+              </div>
+
+
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="flash-product-card">
+            <div class="flash-product-image">
+              <img src="../images/image03.png" alt="IPS LCD Gaming Monitor" />
+              <div class="discount-badge">-30%</div>
+              <div class="flash-product-actions">
+                <button class="flash-action-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="flash-action-btn">
+                  <i class="far fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="flash-product-info">
+              <h3 class="flash-product-name">IPS LCD Gaming Monitor</h3>
+              <div class="flash-product-price">
+                <span class="flash-current-price">$370</span>
+                <span class="flash-old-price">$400</span>
+              </div>
+              <div class="flash-product-rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="review-count">(99)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="flash-product-card">
+            <div class="flash-product-image">
+              <img src="../images/image04.png" alt="S-Series Comfort Chair" />
+              <div class="discount-badge">-25%</div>
+              <div class="flash-product-actions">
+                <button class="flash-action-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="flash-action-btn">
+                  <i class="far fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="flash-product-info">
+              <h3 class="flash-product-name">S-Series Comfort Chair</h3>
+              <div class="flash-product-price">
+                <span class="flash-current-price">$375</span>
+                <span class="flash-old-price">$400</span>
+              </div>
+              <div class="flash-product-rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="review-count">(99)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="flash-product-card">
+            <div class="flash-product-image">
+              <img src="../images/image04.png" alt="S-Series Comfort Chair" />
+              <div class="discount-badge">-25%</div>
+              <div class="flash-product-actions">
+                <button class="flash-action-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="flash-action-btn">
+                  <i class="far fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="flash-product-info">
+              <h3 class="flash-product-name">S-Series Comfort Chair</h3>
+              <div class="flash-product-price">
+                <span class="flash-current-price">$375</span>
+                <span class="flash-old-price">$400</span>
+              </div>
+              <div class="flash-product-rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="review-count">(99)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flash-sales-footer">
+          <button class="view-all-products-btn">View All Products</button>
+        </div>
+      </div>
+    </section>
+    <!-- End Flash Sales Section -->
+  
     <!-- Best Selling Products Section -->
     <section class="section">
       <div class="container">
@@ -667,5 +971,8 @@
         © Copyright Rimel 2022. All rights reserved
       </div>
     </footer>
+
+  </body>
+</html>
   </body>
 </html>
