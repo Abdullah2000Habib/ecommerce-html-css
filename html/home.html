@@ -12,6 +12,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+    />
     <link rel="stylesheet" href="../css/home.css" />
   </head>
 
@@ -38,7 +42,7 @@
                 <a href="about.html" class="nav-link">About</a>
               </li>
               <li class="nav-item">
-                <a href="sign-up.html" class="nav-link">Sign Up</a>
+                <a href="sign_up.html" class="nav-link">Sign Up</a>
               </li>
             </ul>
           </nav>
@@ -47,7 +51,11 @@
           <div class="header-actions">
             <!-- Search Bar -->
             <div class="search-container">
-              <input type="text" class="search-input" placeholder="What are you looking for?">
+              <input
+                type="text"
+                class="search-input"
+                placeholder="What are you looking for?"
+              />
               <button class="search-btn">
                 <i class="fas fa-search"></i>
               </button>
@@ -67,14 +75,18 @@
       </div>
     </header>
     <!-- End Header Section-->
-    
+
     <!-- Hero Banner Section -->
     <div class="hero-banner">
-      <div class="">
+      <div class="container">
         <div class="hero-content">
           <div class="hero-left">
             <div class="hero-badge">
-              <img src="../images/apple.png" alt="Apple Logo" class="apple-logo">
+              <img
+                src="../images/apple.png"
+                alt="Apple Logo"
+                class="apple-logo"
+              />
               <span>iPhone 14 Series</span>
             </div>
             <h1 class="hero-title">Up to 10% off Voucher</h1>
@@ -84,11 +96,15 @@
             </a>
           </div>
           <div class="hero-right">
-            <img src="../images/iphone.png" alt="iPhone 14" class="hero-phone">
+            <img
+              src="../images/iphone.png"
+              alt="iPhone 14"
+              class="hero-phone"
+            />
           </div>
         </div>
         <div class="hero-indicators">
-          <span class="indicator "></span>
+          <span class="indicator"></span>
           <span class="indicator"></span>
           <span class="indicator active"></span>
           <span class="indicator"></span>
@@ -145,6 +161,7 @@
           <div class="flash-product-card">
             <div class="flash-product-image">
               <img src="../images/image01.png" alt="HAVIT HV-G92 Gamepad" />
+              <button class="flash-add-to-cart">Add To Cart</button>
               <div class="discount-badge">-40%</div>
               <div class="flash-product-actions">
                 <button class="flash-action-btn">
@@ -206,8 +223,6 @@
                 </div>
                 <span class="review-count">(75)</span>
               </div>
-
-
             </div>
           </div>
 
@@ -215,6 +230,7 @@
           <div class="flash-product-card">
             <div class="flash-product-image">
               <img src="../images/image03.png" alt="IPS LCD Gaming Monitor" />
+              <button class="flash-add-to-cart">Add To Cart</button>
               <div class="discount-badge">-30%</div>
               <div class="flash-product-actions">
                 <button class="flash-action-btn">
@@ -248,6 +264,7 @@
           <div class="flash-product-card">
             <div class="flash-product-image">
               <img src="../images/image04.png" alt="S-Series Comfort Chair" />
+              <button class="flash-add-to-cart">Add To Cart</button>
               <div class="discount-badge">-25%</div>
               <div class="flash-product-actions">
                 <button class="flash-action-btn">
@@ -281,6 +298,7 @@
           <div class="flash-product-card">
             <div class="flash-product-image">
               <img src="../images/image04.png" alt="S-Series Comfort Chair" />
+              <button class="flash-add-to-cart">Add To Cart</button>
               <div class="discount-badge">-25%</div>
               <div class="flash-product-actions">
                 <button class="flash-action-btn">
@@ -315,9 +333,60 @@
           <button class="view-all-products-btn">View All Products</button>
         </div>
       </div>
-    </section>
+    </div>
     <!-- End Flash Sales Section -->
-  
+
+    <!-- Categories Section -->
+    <div class="categories-section">
+      <div class="container">
+        <div class="categories-header">
+          <div class="categories-header-left">
+            <div class="section-badge">
+              <div class="badge-indicator"></div>
+              <span>Categories</span>
+            </div>
+            <h2 class="categories-title">Browse By Category</h2>
+          </div>
+          <div class="categories-nav">
+            <button class="categories-nav-btn" aria-label="previous">
+              <i class="fas fa-arrow-left"></i>
+            </button>
+            <button class="categories-nav-btn" aria-label="next">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="categories-wrapper">
+          <button class="category-card" type="button">
+            <i class="ri-smartphone-line"></i>
+            <span>Phones</span>
+          </button>
+          <button class="category-card" type="button">
+            <i class="ri-computer-line"></i>
+            <span>Computers</span>
+          </button>
+          <button class="category-card" type="button">
+            <i class="fa-solid fa-clock"></i>
+            <span>SmartWatch</span>
+          </button>
+          <button class="category-card active" type="button">
+            <i class="ri-camera-line"></i>
+            <span>Camera</span>
+          </button>
+          <button class="category-card" type="button">
+            <i class="ri-headphone-line"></i>
+            <span>HeadPhones</span>
+          </button>
+          <button class="category-card" type="button">
+            <i class="ri-gamepad-line"></i>
+            <span>Gaming</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- End Categories Section -->
+
     <!-- Best Selling Products Section -->
     <section class="section">
       <div class="container">
@@ -956,12 +1025,10 @@
             />
           </div>
           <div class="social-icons">
-            <div class="social-icons">
-              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            </div>
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
       </div>
@@ -971,8 +1038,5 @@
         © Copyright Rimel 2022. All rights reserved
       </div>
     </footer>
-
-  </body>
-</html>
   </body>
 </html>

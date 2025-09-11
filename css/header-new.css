@@ -717,3 +717,11 @@
         font-size: 16px;
     }
 }
+
+/* Ensure global header.css rules don't affect the new header */
+header.new-header {
+    height: auto !important;
+    display: block !important;
+    align-items: initial !important;
+    border-bottom: 1px solid #e0e0e0; /* keep the intended border from new header */
+}
